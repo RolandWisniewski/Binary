@@ -1,3 +1,6 @@
+import os
+import glob
+
 text = "Beautiful is better than ugly.\nExplicit is better than implicit.\nSimple is better than complex.\nComplex is better than complicated.\nFlat is better than nested.\nSparse is better than     dense.\nReadability counts.\nSpecial cases aren't special enough to break the rules.\nAlthough practicality beats purity.\nErrors should never pass silently.\nUnless explicitly silenced."
 
 text_list = text.split("\n")
@@ -35,3 +38,10 @@ for i, plik in enumerate(text_list):
     f.close()
 
 print(my_decoded_text[:-1])
+
+cwd = os.getcwd()
+file_path = f'{cwd}/plik*.txt'
+files = glob.glob(file_path)
+
+for i in files:
+    os.remove(i)
