@@ -50,4 +50,4 @@ Unless explicitly silenced.
 * Make sure you have write permissions in the directory where the script is run.
 
 👤 Author
-* [RolandWisniewski](https://github.com/RolandWisniewski)
+* Created by [RolandWisniewski](https://github.com/RolandWisniewski)
